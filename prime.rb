@@ -8,6 +8,8 @@ def prime?(num)
         factors << number
       end
     end
+  else
+    return false
   end
 
 
