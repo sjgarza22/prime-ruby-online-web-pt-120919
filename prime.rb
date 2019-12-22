@@ -9,4 +9,13 @@ def prime?(num)
       end
       i += 1
     end
+  else
+    return false
+  end
+
+  if factors.length < 3
+    return true
+  else
+    return false
+  end
 end
