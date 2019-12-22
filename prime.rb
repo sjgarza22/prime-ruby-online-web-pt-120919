@@ -7,6 +7,8 @@ def prime?(num)
       if num % number == 0
         factors << number
       end
+    end
+  end
 
 
   if factors.length < 3
