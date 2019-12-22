@@ -1,14 +1,16 @@
 # Add  code here!
 def prime?(num)
-  possible_factors = [1..num]
-  array = [1, num]
-  possible_factors.each do |factor|
-    if num % factor == 0 && array.length < 3
-      array << factor
-    elsif array.length > 2
-      return false
-    else
-      return true
+  factors = [1, num]
+  i = 2
+  while factors.length < 3
+    if i % num == 0
+      factors << num
     end
+  end
+
+  if factors.length < 3
+    return true
+  else
+    return false
   end
 end
