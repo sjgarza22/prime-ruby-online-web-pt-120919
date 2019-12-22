@@ -1,7 +1,7 @@
 # Add  code here!
 def prime?(num)
   factors = [1..num]
-  array = []
+  array = [1, num]
   factors.each do |factor|
     if num % factor == 0 && array.length < 3
       array << factor
